@@ -1,3 +1,9 @@
+const app = document.getElementById('app');
+if (app) {
+  app.style.opacity = '1';
+  app.style.animation = 'none';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // ---- Elements ----
   const dynamicRoleEl = document.getElementById('dynamic-role');
