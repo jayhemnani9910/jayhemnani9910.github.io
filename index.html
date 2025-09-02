@@ -1,262 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-  <!-- Privacy-friendly analytics (optional): uncomment if you use Simple Analytics -->
-  <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jay Hemnani | Data Analytics & Engineering</title>
-  <meta name="description" content="Data-driven grad student blending software fundamentals with ML and analytics. End-to-end: ingest → model → analyze → ship. M.S. Data Analytics @ SJSU." />
-  <meta name="theme-color" content="#121212" />
-  <link rel="canonical" href="https://www.jayhemnani.me/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Jay Hemnani | Data Analytics & Engineering" />
-  <meta property="og:description" content="End-to-end builder across DA/DE/DS/SWE/AI‑ML. M.S. Data Analytics @ SJSU." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.jayhemnani.me/" />
-  <meta property="og:image" content="/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="style.css?v=2" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- Removed Font Awesome kit: it was loaded but unused. :contentReference[oaicite:2]{index=2} -->
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Jay Hemnani — Data Platforms & Real-time Analytics</title>
+  <meta name="description" content="I build data platforms & real-time analytics."/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.82em' x='0' font-size='90'%3EJH%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <a class="skip-link" href="#hero">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">JH</span><span class="brand-text">Jay&nbsp;Hemnani</span></a>
+  <nav class="nav" aria-label="Primary">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list"><span class="sr-only">Menu</span><div class="burger"></div></button>
+    <ul id="nav-list" class="nav-list">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+  <div class="header-right">
+    <a class="iconbtn" href="https://github.com/jay-hemnani" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.9.58.11.79-.26.79-.58v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.74 1.26 3.41.96.11-.76.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.17a11 11 0 0 1 5.8 0c2.21-1.48 3.18-1.17 3.18-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.07 0 4.41-2.69 5.39-5.25 5.68.41.36.77 1.06.77 2.14v3.17c0 .33.21.7.8.58A11.51 11.51 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+    </a>
+    <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">◎</button>
+  </div>
+</header>
 
-  <div id="app">
-    <!-- Header -->
-    <header>
-      <div class="logo">Jay Hemnani</div>
-      <nav aria-label="External">
-        <a href="https://linkedin.com/in/jayhemnani" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/jeyhemnani99" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:jay.hemnani@sjsu.edu">Email</a>
-      </nav>
-    </header>
+<main id="main">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hi">hello, I’m</p>
+      <h1 class="name">Jay <span>Hemnani</span></h1>
 
-    <!-- Hero -->
-    <main id="landing-page" aria-labelledby="site-title">
-      <section id="hero">
-        <h1 id="site-title" class="hero-title">
-          A builder of neat, reliable<br/>
-          <span id="dynamic-role" class="dynamic-text" aria-hidden="true"></span> solutions.
-        </h1>
-        <p class="sr-only">A builder of neat, reliable Data Analytics, Data Engineering, Data Science, Software Engineering, and AI/ML solutions.</p>
-        <!-- CTA chips: also filter the Highlights below -->
-        <div class="cta-chips" role="group" aria-label="Open to roles">
-          <button class="chip" type="button" data-track="da" aria-pressed="false">DA</button>
-          <button class="chip" type="button" data-track="de" aria-pressed="false">DE</button>
-          <button class="chip" type="button" data-track="ds" aria-pressed="false">DS</button>
-          <button class="chip" type="button" data-track="swe" aria-pressed="false">SWE</button>
-          <button class="chip" type="button" data-track="aiml" aria-pressed="false">AI/ML</button>
-          <button class="chip clear" type="button" data-action="clear">Clear</button>
-        </div>
-        <p class="hero-summary">
-          Data-driven grad student blending software fundamentals with ML, analytics, and documentation. I build end‑to‑end—ingest → model → analyze → ship. M.S. Data Analytics @ SJSU.
-        </p>
-      </section>
+      <p class="tagline">I build <span class="accent">data platforms</span> & real-time analytics.</p>
+      <p class="sub">Master’s in Data Analytics @ <strong>SJSU</strong></p>
 
-      <!-- Highlights (above the fold) -->
-      <section id="highlights" aria-labelledby="highlights-title">
-        <h2 id="highlights-title">Highlights</h2>
-        <div class="cards">
-          <!-- F: AIMV-21 papers (DS/AI/ML) -->
-          <article class="card" data-tags="ds aiml">
-            <h3>AIMV‑21: Ensemble DS & Scheduling</h3>
-            <ul>
-              <li><b>Diabetes Prediction (Stacking):</b> 6‑model stack, ~82.68% accuracy.</li>
-              <li><b>Efficient Vaccine Scheduler:</b> priority‑aware scheduling inspired by OS CPU scheduling.</li>
-            </ul>
-            <footer class="meta">Role focus: DS / AI‑ML</footer>
-          </article>
+      <p class="typing"><span>I’m&nbsp;</span><span id="typewriter" class="cursor">Data Engineer</span></p>
 
-          <!-- D: Patching (Security) (SWE) -->
-          <article class="card" data-tags="swe">
-            <h3>Patching (Software Security)</h3>
-            <p>Automatic binary‑hardening to neutralize certain vulns without source; security‑minded systems work.</p>
-            <footer class="meta">Role focus: SWE</footer>
-          </article>
-
-          <!-- A: Elite Hotel Group (DA) -->
-          <article class="card" data-tags="da">
-            <h3>Elite Hotel Group — Data Analyst</h3>
-            <p>Built occupancy/ADR/RevPAR views; automated weekly ops snapshots; QA rules flagged revenue‑impacting anomalies.</p>
-            <footer class="meta">Role focus: DA</footer>
-          </article>
-
-          <!-- B: Cactus Creatives recsys (AI/ML, SWE) -->
-          <article class="card" data-tags="aiml swe">
-            <h3>Hybrid Recsys — Cactus Creatives</h3>
-            <p>Popularity + collaborative filtering; lift in retention & new‑user acquisition; contributed to CI/CD on Azure.</p>
-            <footer class="meta">Role focus: AI‑ML / SWE</footer>
-          </article>
-        </div>
-      </section>
-
-      <!-- Choose Your Path -->
-      <section id="roles" aria-labelledby="roles-title">
-        <h2 id="roles-title">Choose Your Path</h2>
-        <div class="roles-container">
-          <!-- Buttons: keyboard‑friendly; clicking selects the corresponding tab below -->
-          <button class="role-card" type="button" data-tab="da"><h3>Data Analyst</h3><p>SQL, Dashboards, A/B Insights</p></button>
-          <button class="role-card" type="button" data-tab="de"><h3>Data Engineer</h3><p>ETL/ELT, Pipelines, Warehousing</p></button>
-          <button class="role-card" type="button" data-tab="ds"><h3>Data Scientist</h3><p>Classical ML, Feature Engineering</p></button>
-          <button class="role-card" type="button" data-tab="swe"><h3>Software Engineer</h3><p>Backend Services, APIs, CI/CD</p></button>
-          <button class="role-card" type="button" data-tab="aiml"><h3>AI/ML Engineer</h3><p>Prototyping, Vector Search, MLOps</p></button>
-        </div>
-      </section>
-    </main>
-
-    <!-- Role tabs (accessible) -->
-    <section id="role-tabs" aria-labelledby="paths-title">
-      <h2 id="paths-title">Paths</h2>
-
-      <div class="tabs" role="tablist" aria-label="Role tabs">
-        <button role="tab" id="tab-da"   aria-controls="panel-da"   aria-selected="false" tabindex="-1">DA</button>
-        <button role="tab" id="tab-de"   aria-controls="panel-de"   aria-selected="false" tabindex="-1">DE</button>
-        <button role="tab" id="tab-ds"   aria-controls="panel-ds"   aria-selected="false" tabindex="-1">DS</button>
-        <button role="tab" id="tab-swe"  aria-controls="panel-swe"  aria-selected="false" tabindex="-1">SWE</button>
-        <button role="tab" id="tab-aiml" aria-controls="panel-aiml" aria-selected="false" tabindex="-1">AI/ML</button>
+      <div class="cta">
+        <a class="btn primary" href="resume.html">View Resume</a>
+        <a class="btn ghost" href="projects.html">Explore Projects</a>
       </div>
+    </div>
+  </section>
+</main>
 
-      <!-- DA (Tableau-style) -->
-      <div id="panel-da" role="tabpanel" aria-labelledby="tab-da" hidden class="page dashboard-theme">
-        <div class="dashboard-header"><h3>Data Analyst Portfolio</h3></div>
-        <div class="dashboard-grid">
-          <div class="widget kpi"><h4>Core Tools</h4><p>SQL, Python (pandas), Excel</p></div>
-          <div class="widget kpi"><h4>Skills</h4><p>BI Dashboards, QA, Storytelling</p></div>
-          <div class="widget kpi"><h4>Impact</h4><p>Revenue &amp; Ops Insights</p></div>
-          <div class="widget full-width">
-            <h4>Experience: Elite Hotel Group</h4>
-            <p>Occupancy, ADR, RevPAR in SQL/Python; automated weekly ops snapshots; QA rules to flag anomalies.</p>
-          </div>
-          <div class="widget"><h4>Project: OptiSupply (Logistics)</h4><p>Reduced shipping costs and delays via analytics.</p></div>
-          <div class="widget"><h4>Project: Wikipedia Analysis</h4><p>Scrape → tokenize → visualize top‑N terms via Flask UI.</p></div>
-        </div>
-      </div>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Jay Hemnani • <a href="mailto:jodnani10@gmail.com">contact</a></p>
+</footer>
 
-      <!-- DE (new panel so DE isn’t a dead end) -->
-      <div id="panel-de" role="tabpanel" aria-labelledby="tab-de" hidden class="page dashboard-theme">
-        <div class="dashboard-header"><h3>Data Engineer</h3></div>
-        <div class="dashboard-grid">
-          <div class="widget kpi"><h4>Core Tools</h4><p>ETL/ELT, SQL, PySpark</p></div>
-          <div class="widget kpi"><h4>Pipelines</h4><p>Batch + near‑real‑time</p></div>
-          <div class="widget kpi"><h4>Data Quality</h4><p>QA rules &amp; monitoring</p></div>
-          <div class="widget full-width">
-            <h4>Experience</h4>
-            <p>Warehouse schemas, reconciliation jobs, anomaly detection; Docker, basic AWS/GCP; CI/CD.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- DS (new panel so DS isn’t a dead end) -->
-      <div id="panel-ds" role="tabpanel" aria-labelledby="tab-ds" hidden class="page openai-theme">
-        <div class="openai-container">
-          <div class="chat-turn">
-            <div class="chat-avatar assistant" aria-hidden="true"></div>
-            <div class="chat-message">
-              <h4>Data Science</h4>
-              <ul>
-                <li>Classical ML, feature engineering, metric‑driven evaluation.</li>
-                <li>Publications: diabetes stacking (~82.68% acc), vaccine scheduler.</li>
-                <li>Light MLOps and evaluation loops.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SWE (Google-like) -->
-      <div id="panel-swe" role="tabpanel" aria-labelledby="tab-swe" hidden class="page google-theme">
-        <div class="google-header">
-          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google logo (decorative)" class="google-logo">
-          <div class="google-search-bar" aria-hidden="true">
-            <span>Jay Hemnani - Software Engineer</span>
-            <span class="search-bar-x">×</span>
-            <span class="search-bar-mic"></span>
-            <span class="search-bar-camera"></span>
-            <span class="search-bar-search-icon"></span>
-          </div>
-        </div>
-        <div class="google-content-area">
-          <aside class="google-sidebar">
-            <div class="sidebar-section">
-              <h4>Contact</h4>
-              <p>jay.hemnani@sjsu.edu</p>
-              <a href="https://linkedin.com/in/jayhemnani">linkedin.com/in/jayhemnani</a>
-              <a href="https://github.com/jeyhemnani99">github.com/jeyhemnani99</a>
-            </div>
-            <div class="sidebar-section"><h4>Education</h4><p><b>M.S. Data Analytics</b>, SJSU</p><p><b>B.Tech Comp. Eng.</b>, PDEU</p></div>
-            <div class="sidebar-section"><h4>Tech</h4><p>Python, Java, Go, C++, Swift, .NET, Docker, SQL, MongoDB, AWS/GCP, CI/CD</p></div>
-            <div class="sidebar-section"><h4>Languages</h4><p>English, Gujarati, Hindi</p></div>
-          </aside>
-          <div class="google-main-content">
-            <div class="search-result">
-              <a class="result-title">AI/ML / SWE Intern — Cactus Creatives Pvt. Ltd.</a>
-              <p class="result-snippet">Hybrid recsys (popularity + collaborative filtering) → retention & new‑user lift. CI/CD hygiene on Azure.</p>
-              <span class="result-url">repo link on request</span>
-            </div>
-            <div class="search-result">
-              <a class="result-title">iOS App Dev — Cygnus SoftTech</a>
-              <p class="result-snippet">Built CodeLock (privacy/security), encryption‑first flows. Instrumented usage then shipped retention wins.</p>
-              <span class="result-url">repo link on request</span>
-            </div>
-            <div class="search-result">
-              <a class="result-title">Patching (Software Security)</a>
-              <p class="result-snippet">Automatic binary‑hardening to neutralize vulns without source.</p>
-              <span class="result-url">repo link on request</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- AI/ML (Chat-like) -->
-      <div id="panel-aiml" role="tabpanel" aria-labelledby="tab-aiml" hidden class="page openai-theme">
-        <div class="openai-container">
-          <div class="chat-turn">
-            <div class="chat-avatar user" aria-hidden="true">JH</div>
-            <div class="chat-message">
-              <p>Detail Jay’s capabilities as an AI/ML Engineer (experience, projects, publications).</p>
-            </div>
-          </div>
-          <div class="chat-turn">
-            <div class="chat-avatar assistant" aria-hidden="true"></div>
-            <div class="chat-message">
-              <h4>AI/ML Engineer</h4>
-              <ul>
-                <li><b>Amnex:</b> Credit‑fraud prototype with class‑imbalance handling; analytics for model signals.</li>
-                <li><b>Cactus Creatives:</b> Hybrid recsys; retention & new‑user lift.</li>
-                <li><b>Key projects:</b> Chatbot (NLP), Smart Water (IoT).</li>
-                <li><b>Papers:</b> Stacking for diabetes (~82.68%); priority‑aware vaccine scheduler.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /role-tabs -->
-  </div><!-- /app -->
-
-  <script src="script.js?v=2" defer></script>
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jay Hemnani",
-    "email": "mailto:jay.hemnani@sjsu.edu",
-    "jobTitle": "Data Analytics Graduate Student",
-    "affiliation": "San José State University",
-    "url": "https://www.jayhemnani.me",
-    "sameAs": ["https://linkedin.com/in/jayhemnani","https://github.com/jeyhemnani99"]
-  }
-  </script>
+<script src="assets/app.js"></script>
 </body>
 </html>
